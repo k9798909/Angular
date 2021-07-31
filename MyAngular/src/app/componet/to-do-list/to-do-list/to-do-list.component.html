@@ -1,0 +1,29 @@
+<div class="d-flex justify-content-center p-3 w-100 mx-auto">
+  <div class="w-25 mx-5">
+    <h2 class="h2 mx-auto text-center">新增待辦事項</h2>
+    <form action="">
+      <div class="form-group mb-2">
+        <label for="subject">標題</label>
+        <input id="subject" name="subject" type="text" class="form-control" [(ngModel)]="addToDoItem.subject"/>
+      </div>
+      <div class="form-group mb-2">
+        <label for="content">內容</label>
+        <textarea id="content" name="content" class="form-control" rows="3" [(ngModel)]="addToDoItem.content">
+        </textarea>
+      </div>
+      <div class="d-flex justify-content-center w-100">
+        <button (click)="confirmBtnClick()" id="confirmBtn" type="button" class="btn btn-primary mx-2">確定</button>
+        <button id="clearBtn" type="button" class="btn btn-primary mx-2">清空</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="w-25 mx-5">
+    <h2 class="h2 mx-auto text-center">待辦事項</h2>
+    <ul class="list-group">
+      <li class="list-group-item"><h5 class="h5">{{addToDoItem.subject}}</h5><p>{{addToDoItem.content}}</p></li>
+      <li class="list-group-item"><h5 class="h5">清單一：</h5><p></p></li>
+    </ul>
+  </div>
+
+</div>

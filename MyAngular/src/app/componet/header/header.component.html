@@ -1,0 +1,62 @@
+<header class="container-fluid main py-3 px-5">
+  <div class="d-flex justify-content-between w-100">
+
+    <img
+      width="50"
+      height="50"
+      alt="Angular Logo"
+      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
+    />
+
+    <div class="d-flex justify-content-between w-75">
+      <ul class="nav nav-pills nav-fill w-100">
+        <li class="nav-item mt-1 mx-1">
+          <a
+            href="#"
+            (click)="navClick($event, 0)"
+            [ngClass]="{ active: iteamsActive[0] }"
+            class="nav-link"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item mt-1">
+          <a
+            href="#"
+            (click)="navClick($event, 1)"
+            [ngClass]="{ active: iteamsActive[1] }"
+            class="nav-link"
+            >Features</a
+          >
+        </li>
+        <li class="nav-item mt-1">
+          <a
+            href="#"
+            (click)="navClick($event, 2)"
+            [ngClass]="{ active: iteamsActive[2] }"
+            class="nav-link"
+            >Pricing</a
+          >
+        </li>
+        <li class="nav-item mt-1">
+          <a
+            href="#"
+            (click)="navClick($event, 3)"
+            [ngClass]="{ active: iteamsActive[3] }"
+            class="nav-link"
+            >FAQs</a
+          >
+        </li>
+        <li class="nav-item mt-1">
+          <a
+            href="#"
+            (click)="navClick($event, 4)"
+            [ngClass]="{ active: iteamsActive[4] }"
+            class="nav-link"
+            >About</a
+          >
+        </li>
+      </ul>
+    </div>
+    <button class="btn btn-login h-75 my-auto">登入</button>
+  </div>
+</header>
