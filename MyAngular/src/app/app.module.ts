@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './componet/header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ToDoListModule } from './componet/to-do-list/to-do-list.module';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -20,7 +21,8 @@ import { ToDoListModule } from './componet/to-do-list/to-do-list.module';
     AppRoutingModule,
     NgbModule,
     FormsModule,
-    ToDoListModule
+    ToDoListModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

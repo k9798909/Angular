@@ -13,7 +13,7 @@ export class TodoListServiceService {
 
   getTodoListItemData() {
     return this.http
-      .get('http://127.0.0.1:5500/src/assets/todoListItemData.json');
+      .get('http://127.0.0.1:4200/src/assets/todoListItemData.json');
 
   }
 }
