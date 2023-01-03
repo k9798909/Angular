@@ -1,0 +1,26 @@
+.card-img {
+  max-width: 210px;
+  max-height: 168px;
+  display: block;
+}
+
+.example-card {
+  width: 210px;
+  height: 350px;
+}
+
+.introduce{
+  width: 100%;
+  min-height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  word-break: break-all;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-around;
+}

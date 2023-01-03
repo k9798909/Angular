@@ -1,0 +1,27 @@
+<h1>購物清單</h1>
+<div class="cart">
+  <ul>
+    <li *ngFor="let product of cartProduct">
+      <mat-card class="example-card">
+        <mat-card-title-group>
+          <img mat-card-sm-image class="card-img" [src]="'/api/product/image/' + product.id" />
+          <mat-card-title>{{ product.name }}</mat-card-title>
+          <mat-card-subtitle class="mb-0">
+            單價:{{ product.price }} <br />
+            數量:{{ product.quantity }}<br />
+            總價:{{ product.price * product.quantity }}<br />
+          </mat-card-subtitle>
+        </mat-card-title-group>
+      </mat-card>
+    </li>
+  </ul>
+  <div *ngIf="cartProduct?.length != 0">
+    <button mat-raised-button color="warn" (click)="clearCard()">
+      清空購物車
+    </button>
+    <button class="checkOutBtn" mat-raised-button color="primary">結帳</button>
+  </div>
+</div>
+<div *ngIf="cartProduct?.length == 0" class="d-flex justify-content-center panel red">
+  <h3>請選購商品!!</h3>
+</div>

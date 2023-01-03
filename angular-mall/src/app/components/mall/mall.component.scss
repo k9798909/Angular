@@ -1,0 +1,44 @@
+.mall {
+  width: 100%;
+  margin-top: 50px;
+
+  ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap:wrap;
+    margin-bottom: 60px;
+    li {
+      margin:10px 25px;
+    }
+  }
+  .sidenav{
+    width: 35%;
+    max-height: 100vh;
+    position: fixed;
+    padding-top: 50px;
+  }
+  .cartBtn {
+    position:fixed;
+    bottom: 20px;
+    right: 15px;
+    height:50px;
+    width: 50px;
+    border: 0px;
+    border-radius: 50px;
+    background-color:#FFBB73;
+    img {
+      width: 30px;
+      height: 30px;
+      margin: 0px;
+    }
+
+    span.mat-button-wrapper {
+      padding: 0px;
+    }
+
+  }
+
+
+}
+
+

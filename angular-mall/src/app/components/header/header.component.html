@@ -1,0 +1,12 @@
+<nav mat-tab-nav-bar backgroundColor="primary" class="header">
+  <img class="markImg" src="assets/images/mark.png"/>
+  <a
+    mat-tab-link
+    *ngFor="let link of links"
+    [active]="actionLink == link"
+    (click)="handlerLinkClick(link)"
+    [routerLink]="link.url"
+  >
+    {{ link.label }}
+  </a>
+</nav>

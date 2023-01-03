@@ -1,0 +1,26 @@
+<mat-drawer-container class="mall" hasBackdrop="true">
+  <ul>
+    <li *ngFor="let product of products">
+      <app-mall-card
+        [product]="this.product"
+        [cartProduct]="this.cartProduct"
+        (getCartProduct)="setCart($event)"
+      ></app-mall-card>
+    </li>
+  </ul>
+
+  <mat-drawer #drawer class="sidenav" mode="over" position="end">
+    <app-shopping-cart (clearCart)="setCart($event)" [cartProduct]="cartProduct"></app-shopping-cart>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <button
+      class="cartBtn"
+      type="button"
+      color="accent"
+      (click)="drawer.toggle()"
+    >
+      <img src="assets/images/cart.svg" />
+    </button>
+  </div>
+</mat-drawer-container>

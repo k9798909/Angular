@@ -1,0 +1,19 @@
+<mat-card class="example-card">
+  <img
+    mat-card-image
+    class="card-img"
+    [src]="'/api/product/image/' + product.id"
+    alt="Photo of a Shiba Inu"
+  />
+  <mat-card-title>{{product.name}}</mat-card-title>
+  <mat-card-subtitle class="mb-0">${{product.price}}</mat-card-subtitle>
+  <mat-card-content>
+    <p class="introduce">
+      {{product.description}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions class="button-row">
+    <button mat-flat-button color="primary" (click)="this.handlerAddCart()">加入購物車</button>
+    <button mat-flat-button color="primary">明細</button>
+  </mat-card-actions>
+</mat-card>
